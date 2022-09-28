@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Band</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
 </head>
@@ -14,9 +14,9 @@
             <!-- begin :nav  -->
             <ul id="nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Band</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#">
                         More 
@@ -48,7 +48,7 @@
 
 
         <div id="content">
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">The Band</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">
@@ -58,17 +58,17 @@
                 <div class="row members-list">
                     <div class="col col-third text-center">
                         <p class="member-name">Trường</p>
-                        <img src="./assets/img/team/newyork.jpg" alt="ảnh trường " class="member-img">
+                        <img src="./assets/img/team/bandmember.jpg" alt="ảnh trường " class="member-img">
                     </div>
 
                     <div class="col col-third text-center">
                         <p class="member-name">Trường</p>
-                        <img src="./assets/img/team/newyork.jpg" alt="ảnh trường " class="member-img">
+                        <img src="./assets/img/team/bandmember.jpg" alt="ảnh trường " class="member-img">
                     </div>
 
                     <div class="col col-third text-center">
                         <p class="member-name">Trường</p>
-                        <img src="./assets/img/team/newyork.jpg" alt="ảnh trường " class="member-img">
+                        <img src="./assets/img/team/bandmember.jpg" alt="ảnh trường " class="member-img">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -76,7 +76,7 @@
 
 
             <!-- tour-section -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
                     <p class="section-sub-heading text-white">Remember to book your tickets!</p>
@@ -95,7 +95,7 @@
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -106,7 +106,7 @@
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -117,7 +117,7 @@
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -126,7 +126,7 @@
             </div>
             <!-- end tour -->
 
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
@@ -155,17 +155,30 @@
                                     <input type="text" name="" required placeholder="Message" class="form-control">
                                 </div>
                             </div>
-                            <input class="mt-16 form-submit-btn" type="submit" value="SEND">
+                            <input class="mt-16 btn pull-right" type="submit" value="SEND">
                         </form>
                     </div>
                 </div>
+            </div>
+            <!-- end contact section  -->
+
+            <div class="map-section">
+                <img src="./assets/img/team/map.jpg" alt="map">
             </div>
         </div>
 
 
 
         <div id="footer">
-
+            <div class="social-list">
+                <a href=""><i class="ti-facebook" ></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-reddit"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="#">w3.css</a></p>
         </div>
     </div>
 

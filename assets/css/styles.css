@@ -8,6 +8,7 @@
     list-style-type: none;
 }
 html{
+    scroll-behavior: smooth;/*hành vi khi cuộn */
     font-family: Arial, Helvetica, sans-serif;
 }
 #main{
@@ -60,6 +61,27 @@ html{
 .text-center{
     text-align: center !important;
 }
+
+.pull-right{
+    float: right !important;
+}
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
 #header{
     height: 46px;
     background-color: #000;
@@ -181,7 +203,7 @@ html{
 
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -268,7 +290,7 @@ html{
     margin-top: 32px;
     /* margin-left: -8px;
     margin-right: -8px; */
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
     
 }
 
@@ -306,20 +328,7 @@ html{
     line-height: 1.4;
 }
 
-.place-buy-btn{
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    margin-top: 15px;
 
-}
-
-.place-buy-btn:hover{
-    color: #000;
-    background-color: #ccc;
-}
 #footer{
 
 }
@@ -440,13 +449,16 @@ html{
     width: 100%;
     outline: none;
 }
-.contact-form .form-submit-btn{
+.map-section img{
+    width: 100%;
+}
+/* .contact-form .form-submit-btn{
     background-color: #000;
     color: #fff;
     border: 1px solid #000;
     padding: 10px 16px;
     float: right;
-}
+} */
 @keyframes modalFaceIn {
     from{
         transform: translateY(-150px);
@@ -458,3 +470,30 @@ html{
     }
 }
 
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .social-list{
+    font-size: 24px;
+}
+#footer .social-list a{
+    color:rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .copyright a:hover,
+#footer .social-list a:hover{
+    color:rgba(0, 0, 0, 0.5);
+}
+
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+.copyright > a{
+    text-decoration: underline;
+}
