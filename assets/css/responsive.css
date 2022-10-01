@@ -34,7 +34,7 @@ Mobile: <=740px */
 }
 
 
-@media (max-width:740px){
+@media (max-width:739px){
     .s-full-width{
         width: 100% !important;
     }
